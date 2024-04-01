@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d00ff; /* Dark grey background */
+    color: hsl(0, 67%, 99%);
+}
+
+header {
+    background-color: #0d00ff; /* Neon blue header background */
+    color: #808080; /* Grey text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #808080; /* Grey border bottom */
+    margin-bottom: 30px;
+    animation: neonPulse 1.5s ease-in-out infinite alternate; /* Neon pulse animation */
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow: 0 0 5px #808080, 0 0 10px #808080, 0 0 15px #808080;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+nav {
+    background-color: #0d00ff; /* Neon blue navigation background */
+    color: #808080; /* Grey text color */
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 5px solid #808080; /* Grey border bottom */
+    animation: neonRotate 4s linear infinite; /* Neon rotation animation */
+}
+
+
+nav a {
+    color: #808080; /* Grey text color */
+    text-decoration: none;
+    margin: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #0d00ff; /* Neon blue text color on hover */
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #0d00ff ; /* Neon blue footer background */
+    color: #808080; /* Grey text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    animation: neonGlow 2s ease-in-out infinite alternate; /* Neon glow animation */
+}
+
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 5px #808080;
+    }
+    to {
+        box-shadow: none;
+    }
+}
+
+/* styles.css */
+
+.image-container {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height to match the width for circular shape */
+    margin: 20px; /* Adjust the margin as needed */
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    border-radius: 50%; /* Make the container a circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+    display: inline-block; /* Ensure the containers are displayed in-line */
+    text-align: center; /* Center the image horizontally */
+}
+
+.image-container img {
+    max-width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
+/* CSS for main layout */
+main {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CSS for image containers */
+.image-container {
+    width: 400px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+

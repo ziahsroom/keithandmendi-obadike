@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks - Blackness for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for main layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+
+        header, main, footer {
+            margin: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333; /* Dark grey text color */
+            font-weight: bold;
+        }
+
+        .artwork-details {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .artwork-description {
+            text-align: justify;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+            animation: slideInUp 1s ease-in-out; /* Slide-in animation */
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .artwork-description p {
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            text-align: center;
+            animation: scaleIn 0.5s ease-in-out; /* Scale-in animation */
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="artwork2.html">Artwork 2</a>
+        <a href="artwork3.html">Artwork 3</a>
+    </nav>
+
+    <header>
+        <h1 class="artwork-title">Blackness for $ale</h1>
+        <p class="artwork-details">2001, digital/web, Mendi+Keith Obadike</p>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+
+        <div class="image-container">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+
+        <!-- New Image Containers -->
+        <div class="image-container">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+
+        <div class="image-container">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+
+        <div class="artwork-description">
+            <p>"Blackness for Sale" sheds light on how language used online mirrors colonization and slavery. Terms like Navigator, Explorer, and Safari evoke exploration, while the auctioning of Blackness echoes historical auctions of Black bodies and racist memorabilia on eBay. This project emphasizes that our online interactions are influenced by real-world histories, reminding us that even virtual exchanges are shaped by our physical experiences and backgrounds.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Your Name</p>
+    </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introductory Page - Art Gallery</title>
+    <style>
+        body {
+            font: 100; font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url('bling_bg.jpg'); /* Bling background */
+            color: #fff; /* White text color */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #2907e7; /* Deep pink header background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+            font-size: 15px; /* Larger font size */
+            text-transform: uppercase; /* Uppercase text */
+            border-bottom: 3px solid #ffd700; /* Gold border bottom */
+            margin-bottom: 20px; /* Add margin at the bottom */
+        }
+
+        nav {
+            background-color: #2907e7; /* Deep pink navigation background */
+            color: #fff; /* White text color */
+            padding: 10px;
+            text-align: center;
+            font-size: 18px; /* Slightly larger font size */
+            border-bottom: 3px solid #ffd700; /* Gold border bottom */
+        }
+
+        nav a {
+            color: #fff; /* White text color */
+            text-decoration: none; /* Removed underline from links */
+            margin: 0 20px; /* Added margin between links */
+            transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Gold text color on hover */
+            transform: rotate(10deg) scale(1.1); /* Rotate and scale on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 150px;
+            justify-items: center;
+        }
+
+        .image-grid img {
+            max-width: 100%;
+            width: 50%;
+            height: auto;
+            border: 10px solid #ffd700; /* Gold border around images */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* Gold glow */
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        .image-grid img:hover {
+            transform: rotate(10deg) scale(1.1); /* Rotate and scale on hover */
+            filter: brightness(2.5); /* Increase brightness on hover */
+        }
+
+        
+
+        /* Shimmering animation for background */
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(270deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="artwork1.html">Artwork 1</a>
+        <a href="artwork2.html">Artwork 2</a>
+        <a href="artwork3.html">Artwork 3</a>
+    </nav>
+
+    <header>
+        <h1>Unveiling the Influence: Exploring the Pioneering Black Net Art of Keith and Mendi Obadike</h1>
+    </header>
+
+    <main>
+        <div class="image-grid">
+            <img src="y2k1.jpg">
+            <img src="y2k2.jpg" >
+            <img src="y2k3.jpg" >
+            <img src="y2k4.jpg" >
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Ziah Booker</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
