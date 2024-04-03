@@ -6,11 +6,12 @@
     <title>Introductory Page - Art Gallery</title>
     <style>
         body {
-            font: 100; font-family: monospace;
+            font: 100; 
+            font-family: 'Courier New', Courier, monospace; /* make custom font*/
             margin: 0;
             padding: 0;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url('bling_bg.jpg'); /* Bling background */
-            color: #fff; /* White text color */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url('bling_bg.jpg'); 
+            color: #fff; 
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -21,10 +22,11 @@
             color: #fff; /* White text color */
             padding: 20px;
             text-align: center;
-            font-size: 15px; /* Larger font size */
+            font-size: 25px; /* Larger font size */
             text-transform: uppercase; /* Uppercase text */
             border-bottom: 3px solid #ffd700; /* Gold border bottom */
             margin-bottom: 20px; /* Add margin at the bottom */
+            font-family: 'Courier New', Courier, monospace;
         }
 
         nav {
@@ -53,29 +55,28 @@
             text-align: center;
         }
 
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 150px;
-            justify-items: center;
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
-        .image-grid img {
+        .image-container img {
             max-width: 100%;
-            width: 50%;
             height: auto;
             border: 10px solid #ffd700; /* Gold border around images */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* Gold glow */
             transition: all 0.3s ease-in-out; /* Smooth transition */
+            margin: 5px; /* Add margin between images */
         }
 
-        .image-grid img:hover {
+        .image-container img:hover {
             transform: rotate(10deg) scale(1.1); /* Rotate and scale on hover */
             filter: brightness(2.5); /* Increase brightness on hover */
         }
-
-        
 
         /* Shimmering animation for background */
         @keyframes shimmer {
@@ -105,29 +106,39 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="artwork1.html">Artist 1</a>
-        <a href="artwork2.html">Artist 2</a>
-        <a href="artwork3.html">Artist 3</a>
+        <a href="artwork1.html">Artwork 1</a>
+        <a href="artwork2.html">Artwork 2</a>
+        <a href="artwork3.html">Artwork 3</a>
     </nav>
 
     <header>
-        <h1>Unveiling the Influence: Exploring the Pioneering Black Net Art of Keith and Mendi Obadike and Its Impact on the Internet</h1>
+        <h1>Unveiling the Influence: A Digital art gallery Exploring the Pioneering Black Net Art of Keith and Mendi Obadike.Curated by Ziah Booker</h1>
     </header>
 
     <main>
-        <div class="image-grid">
-            <img src="y2k1.jpg">
-            <img src="y2k2.jpg" >
-            <img src="y2k3.jpg" >
-            <img src="y2k4.jpg" >
+        <div class="image-container">
+            <img src="images/y2k1.jpg" alt="Artwork 1">
+            <img src="images/y2k2.jpg" alt="Artwork 2">
+            <img src="images/y2k3.jpg" alt="Artwork 3">
+            <img src="images/y2k4.jpg" alt="Artwork 4">
+            <img src="images/y2k16.jpg" alt="Artwork 5">
+            <img src="images/y2k5.jpg" alt="Artwork 6">
+            <img src="images/y2k15.jpg" alt="Artwork 7">
+            <img src="images/y2k12.jpg" alt="Artwork 8">
+            <img src="images/y2k9.jpg" alt="Artwork 9">
+            <img src="images/y2k20.jpg" alt="Artwork 10">
+            <img src="images/y2k11.jpg" alt="Artwork 11">
+            <img src="images/y2k7.jpg" alt="Artwork 12">
+        
         </div>
     </main>
 
-    <footer>
-        <p>Created by Ziah Booker</p>
-    </footer>
+
 </body>
 </html>
+
+
+
 
 
 

@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artworks- The Interaction of Coloreds</title>
+    <title>Artworks - The Interaction of Coloreds</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for Artwork 3 page with enhanced visual design */
+        body {
+            background-color: #2907e7; /* Deep blue background */
+            color: #fff; /* White text color */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font */
+            animation: fadeIn 1s ease forwards; /* Apply animation */
+            margin: 0;
+            padding: 0;
+        }
 
+        nav {
+            background-color: #2907e7; /* Semi-transparent black background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px; /* Increase font size */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color:  #2907e7/* Semi-transparent black background */
+        }
+
+        .artwork-title {
+            font-size: 48px; /* Larger font size */
+            margin-bottom: 10px;
+        }
+
+        .artwork-details {
+            font-size: 20px; /* Increase font size */
+            margin-bottom: 20px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+        }
+
+        .image-container {
+            margin: 10px;
+            border: 2px solid #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            width: 300px; 
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .image-container:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .artwork-description {
+            width: 80%;
+            margin: 20px auto;
+            color: #ccc;
+            text-align: center; 
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .artwork-description p {
+            margin-bottom: 10px;
+        }
+
+       footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2907e7; 
+    width: 100%;
+   
+    position: relative;
+    
+    margin-top: 20px; 
+}
+
+    </style>
 </head>
 <body>
     <nav>
@@ -16,39 +107,42 @@
     </nav>
 
     <header>
-        <h1 class="artwork-title">Interaction of Coloreds</h1>
-        <h3>"If you're Black Get Back!"</h2>
+        <h1 class="artwork-title">The Interaction of Coloreds</h1>
+        <h3 class="artwork-details">"If you're Black Get Back!"</h3>
         <p class="artwork-details">2001, digital/web, Mendi+Keith Obadike</p>
     </header>
 
     <main>
         <div class="image-container">
-            <img src="image1.jpg" alt="Image 1">
+            <img src="images/landing_screen.png" alt="image 1" >
         </div>
 
         <div class="image-container">
-            <img src="image2.jpg" alt="Image 2">
-        </div>
-
-        <!-- New Image Containers -->
-        <div class="image-container">
-            <img src="image3.jpg" alt="Image 3">
+            <img src="images/ioc_hover.png" alt="Image 2">
         </div>
 
         <div class="image-container">
-            <img src="image4.jpg" alt="Image 4">
+            <img src="images/form.png" alt="Image 3">
         </div>
 
+    
         <div class="artwork-description">
-        <p> The Interaction of Coloreds is a browser-based work that administers a “digital brown paper bag test” to visitors, toying with historical systems of racial categorization and contemporary discourse around digital surveillance.  The Interaction of Coloreds is a browser-based work that administers a “digital brown paper bag test” to visitors, toying with historical systems of racial categorization and contemporary discourse around digital surveillance.</p>
+            <p>The Interaction of Coloreds is a browser-based work that administers a “digital brown paper bag test” to visitors, toying with historical systems of racial categorization and contemporary discourse around digital surveillance.</p>
+            <p>View the artwork <a href="http://archive.rhizome.org/anthology/IOC.html">here</a>.</p>
         </div>
-       
     </main>
 
     <footer>
-        <p>Created by Your Name</p>
+        <p>Created by Ziah Booker</p>
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
 
 

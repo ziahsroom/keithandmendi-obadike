@@ -5,6 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artworks - Keeping Up Appearances</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for Artwork 2 with Y2K cyber vibe */
+        body {
+            background-color: #2907e7; /* Black background color */
+            color: #fff; /* White text color */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font */
+        }
+
+        nav {
+            background-color: #2907e7; /* Black background color */
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease forwards;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px; /* Increase font size */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #2907e7; /* Black background color */
+            animation: slideIn 1s ease forwards;
+        }
+
+        .artwork-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .artwork-details {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .image-container {
+            margin: 20px;
+            border: 2px solid #fff; /* White border */
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            width: 500px; /* Adjust width for smaller images */
+            text-align: center; /* Center-align images */
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%; /* Ensure images don't exceed container width */
+        }
+
+        .artwork-description {
+            width: 80%;
+            margin: 20px auto;
+            color:#fff; /* Description text color */
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .artwork-description p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2907e7; /* Black background color */
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -22,32 +127,33 @@
 
     <main>
         <div class="image-container">
-            <img src="image1.jpg" alt="Image 1">
+            <img src="images/keeping-up-appearances-rectangular-opt.gif" alt="Image 1">
         </div>
 
         <div class="image-container">
-            <img src="image2.jpg" alt="Image 2">
+            <img src="images/keeping_up_appearances_cursor_1.png" alt="Image 2">
         </div>
 
         <!-- New Image Containers -->
         <div class="image-container">
-            <img src="image3.jpg" alt="Image 3">
-        </div>
-
-        <div class="image-container">
-            <img src="image4.jpg" alt="Image 4">
+            <img src="images/keeping_up_appearances_nohover.png" alt="Image 3">
         </div>
 
         <div class="artwork-description">
-            <p>Keeping Up Appearances is a “hyper testimonial” in which Mendi Obadike recounts her interactions with a much older white male mentor as a young black woman. At first glance, the work appears to consist only of black, nonreactive Times New Roman text snippets, which make some sense on their own but fail to come together as a coherent narrative.Notably, Keeping Up Appearances is not interactive, unlike many other hypertext works. Purely a spectator, unable to intervene in Mendi’s narrative, the user is reminded of the historical inevitability of dynamics such as the one she describes. <a href="https://webenact.rhizome.org/keeping-up-appearances/20151029152713/http://blacknetart.com/keepingupappearances.html">View the artwork</a></p>
+            <p>Keeping Up Appearances is a “hyper testimonial” in which Mendi Obadike recounts her interactions with a much older white male mentor as a young black woman. At first glance, the work appears to consist only of black, nonreactive Times New Roman text snippets, which make some sense on their own but fail to come together as a coherent narrative. Notably, Keeping Up Appearances is not interactive, unlike many other hypertext works. Purely a spectator, unable to intervene in Mendi’s narrative, the user is reminded of the historical inevitability of dynamics such as the one she describes.</p>
+            <p>View the artwork <a href="https://webenact.rhizome.org/keeping-up-appearances/20151029152713/http://blacknetart.com/keepingupappearances.html">here</a>.</p>
         </div>
     </main>
 
     <footer>
-        <p>Created by Your Name</p>
+        <p>Created by Ziah Booker</p>
     </footer>
 </body>
 </html>
+
+
+
+
 
 
     
