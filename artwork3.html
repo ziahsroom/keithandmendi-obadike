@@ -6,42 +6,46 @@
     <title>Artworks - The Interaction of Coloreds</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional CSS styles for Artwork 3 page with enhanced visual design */
+       
         body {
-            background-color: #2907e7; /* Deep blue background */
-            color: #fff; /* White text color */
-            font-family: 'Courier New', Courier, monospace; /* Monospace font */
-            animation: fadeIn 1s ease forwards; /* Apply animation */
+            background-color: #2907e7; 
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
         }
 
         nav {
-            background-color: #2907e7; /* Semi-transparent black background */
+            background-color: #2907e7; 
             padding: 20px;
             text-align: center;
+            animation: slideFromTop 1s ease-in-out forwards; 
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
-            font-size: 16px; /* Increase font size */
+            font-size: 16px; 
+            animation: fadeIn 1s ease forwards; 
         }
 
         header {
             text-align: center;
             padding: 20px;
-            background-color:  #2907e7/* Semi-transparent black background */
+            background-color:  #2907e7/
+            animation: fadeIn 1s ease forwards; 
         }
 
         .artwork-title {
-            font-size: 48px; /* Larger font size */
+            font-size:36px;
             margin-bottom: 10px;
+            animation: slideFromTop 1s ease forwards; 
         }
 
+      
         .artwork-details {
-            font-size: 20px; /* Increase font size */
+            font-style: italic;
             margin-bottom: 20px;
         }
 
@@ -50,16 +54,15 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: flex-start; /* Align items to the top */
+            align-items: flex-start; 
         }
 
         .image-container {
             margin: 10px;
-            border: 2px solid #fff;
             overflow: hidden;
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
-            width: 300px; 
+            width: 350px; 
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
 
@@ -78,7 +81,7 @@
             margin: 20px auto;
             color: #ccc;
             text-align: center; 
-            animation: fadeIn 1s ease forwards;
+            animation: fadeIn 1s ease forwards; 
         }
 
         .artwork-description p {
@@ -86,16 +89,63 @@
         }
 
        footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2907e7; 
-    width: 100%;
-   
-    position: relative;
+            text-align: center;
+            padding: 20px;
+            background-color: #2907e7; 
+            width: 100%;
+            position: relative;
+            margin-top: 20px; 
+        }
+
+        a {
+            color: white;
+        }
+
     
-    margin-top: 20px; 
+        @keyframes slideFromTop {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
 }
 
+.marquee-container h3 {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@font-face {
+    font-family: 'SmoothPet';
+    src: url(fonts/transfonter.org-20240408-205401/SmoothPet.woff) format('woff');
+  
+}
+
+h3 {
+    font-family: 'SmoothPet'
+   
+}
     </style>
 </head>
 <body>
@@ -108,7 +158,26 @@
 
     <header>
         <h1 class="artwork-title">The Interaction of Coloreds</h1>
-        <h3 class="artwork-details">"If you're Black Get Back!"</h3>
+        <header>
+        
+            <div>
+                <header>
+                    <div class="marquee-container">
+                        <h3>If you're Black get back!
+                            If you're Black get back!
+                           But on the real, fuck colorism!
+                           Black is beautiful. 
+                           Fuck colorism.
+                           Fuck white supremacy.
+                          Dear Black Child, I hope you see your own goddamn beauty.
+                            
+                            
+                            
+                        </h3>
+                    </div>
+                </header>
+                
+            </div>
         <p class="artwork-details">2001, digital/web, Mendi+Keith Obadike</p>
     </header>
 
@@ -125,18 +194,18 @@
             <img src="images/form.png" alt="Image 3">
         </div>
 
-    
         <div class="artwork-description">
-            <p>The Interaction of Coloreds is a browser-based work that administers a “digital brown paper bag test” to visitors, toying with historical systems of racial categorization and contemporary discourse around digital surveillance.</p>
+            <p>The Interaction of Coloreds is a browser-based work that administers a “digital brown paper bag test” to visitors, toying with historical systems of racial categorization and contemporary discourse around digital surveillance.It begins with a popup window, divided into four quadrants, featuring animations that rapidly cycle through images of body parts in various shades of brown. Mousing over each quadrant reveals a different message: “If you’re white you're right.” “If you’re black get back.” “If you’re brown stick around.” “If you’re yellow you’re mellow. This work highlights to historical implications of colorism against Black Americans and how it unfortunately lives on today.</p>
             <p>View the artwork <a href="http://archive.rhizome.org/anthology/IOC.html">here</a>.</p>
         </div>
     </main>
 
     <footer>
-        <p>Created by Ziah Booker</p>
+     
     </footer>
 </body>
 </html>
+
 
 
 

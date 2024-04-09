@@ -8,41 +8,33 @@
 
     <style>
         /* Reset styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #2907e7; /* Dark background color */
-            color: #fff;
-            min-height: 100vh; /* Ensure content fills at least the height of the viewport */
-            display: flex; /* Use flexbox to align items */
-            flex-direction: column; /* Stack elements vertically */
+            background-color: #2907e7; /* Black background color */
+            color: #fff; /* White text color */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font */
         }
 
         nav {
-            background-color:  #2907e7; /* Dark background color */
+            background-color: #2907e7; /* Black background color */
             padding: 20px;
             text-align: center;
-            opacity: 0; /* Initially hide nav */
-            animation: fadeIn 1s ease forwards; /* Fade-in animation */
+            animation: fadeIn 1s ease forwards;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 10px;
+            font-size: 16px; /* Increase font size */
         }
 
         header {
             text-align: center;
             padding: 20px;
-            opacity: 0; /* Initially hide header */
-            animation: fadeIn 1s ease forwards; /* Fade-in animation */
+            background-color: #2907e7; /* Black background color */
+            animation: slideIn 1s ease forwards;
         }
+    
 
         .artwork-title {
             font-size: 36px;
@@ -55,14 +47,22 @@
         }
 
         main {
-            flex: 1; /* Allow main content area to grow and fill remaining space */
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             padding: 20px;
-            opacity: 0; /* Initially hide main content */
-            animation: fadeIn 1s ease forwards; /* Fade-in animation */
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            opacity: 0; 
+            animation: fadeIn 1s ease forwards; 
         }
 
         .image-container {
@@ -70,15 +70,15 @@
             border: 2px solid #fff;
             overflow: hidden;
             border-radius: 10px;
-            background-color: #333; /* Image box background color */
-            flex-basis: calc(33.333% - 40px); /* Adjust width of image boxes */
-            max-width: 300px; /* Set maximum width for image boxes */
-            flex-grow: 1; /* Allow image boxes to grow to fill available space */
-            transition: transform 0.3s ease; /* Add transition for hover effect */
+            background-color: #333; 
+            flex-basis: calc(33.333% - 40px); 
+            max-width: 400px; 
+            flex-grow: 1; 
+            transition: transform 0.3s ease; 
         }
 
         .image-container:hover {
-            transform: scale(1.1); /* Increase scale on hover */
+            transform: scale(1.1); 
         }
 
         .image-container img {
@@ -90,24 +90,22 @@
         .artwork-description {
             width: 80%;
             margin: 20px auto;
-            color: #ccc; /* Description text color */
-            opacity: 0; /* Initially hide description */
-            animation: fadeIn 1s ease forwards; /* Fade-in animation */
+            color: #ccc; 
+            opacity: 0; 
+            animation: fadeIn 1s ease forwards; 
         }
 
         .artwork-description p {
             margin-bottom: 10px;
         }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2907e7; /* Dark background color */
-            margin-top: auto; /* Push footer to bottom */
-            opacity: 0; /* Initially hide footer */
-            animation: fadeIn 1s ease forwards; /* Fade-in animation */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
         }
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -116,6 +114,56 @@
                 opacity: 1;
             }
         }
+        .artwork-description p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2907e7; 
+            margin-top: auto; 
+            opacity: 0; 
+            animation: fadeIn 1s ease forwards; 
+        }
+
+
+       
+
+        a {
+    color: white;
+  }
+ 
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-container h3 {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@font-face {
+    font-family: 'SmoothPet';
+    src: url(fonts/transfonter.org-20240408-205401/SmoothPet.woff) format('woff');
+  
+}
+
+h3 {
+    font-family: 'SmoothPet'
+   
+}
+
+
+.centered-link {
+    text-align: center;
+}
+
     </style>
 </head>
 <body>
@@ -129,10 +177,21 @@
     <header>
         <h1 class="artwork-title">Blackness for $ale</h1>
         <div>
-
-            <h3>"Seeing Blackness as a commodity."</h3>
+            <header>
+                <div class="marquee-container">
+                    <h3>Seeing Blackness as a commodity.
+                        Seeing Blackness as a commodity.
+                        THEY SEE Blackness as a commodity.
+                        THEY SEE Blackness as a commodity.
+                        THIS INTERSECTION OF COMMERCE AND RACE.
+                        THIS INTERSECTION OF COMMERCE AND RACE.
+                        
+                    </h3>
+                </div>
+            </header>
+            
         </div>
-        <p class="artwork-details">2001, digital/web, Mendi+Keith Obadike</p>
+        <p class="artwork-details">2001, digital/web, Keith Obadike</p>
     </header>
 
     <main>
@@ -149,13 +208,15 @@
         </div>
 
         <div class="artwork-description">
-            <p>"Blackness for Sale" sheds light on how language used online mirrors colonization and slavery. Terms like Navigator, Explorer, and Safari evoke exploration, while the auctioning of Blackness echoes historical auctions of Black bodies and racist memorabilia on eBay. This project emphasizes that our online interactions are influenced by real-world histories, reminding us that even virtual exchanges are shaped by our physical experiences and backgrounds.</p>
+            <p>Blackness for Sale sheds light on how language used online mirrors colonization and slavery. Terms like Navigator, Explorer, and Safari evoke exploration, while the auctioning of Blackness echoes historical auctions of Black bodies and racist memorabilia on eBay. This project emphasizes that our online interactions are influenced by real-world histories, reminding us that even virtual exchanges are shaped by our physical experiences and backgrounds.</p>
+            <div class="centered-link">
             <p>View the artwork <a href="http://archive.rhizome.org/anthology/blacknetart/ebay.html">here</a>.</p>
+        </div>
         </div>
     </main>
 
     <footer>
-        <p>Created by Ziah Boooker</p>
+       
     </footer>
 </body>
 </html>
