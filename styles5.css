@@ -1,0 +1,148 @@
+body {
+    background-color: #2907e7; 
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #2907e7; 
+    padding: 20px;
+    text-align: center;
+    animation: slideFromTop 1s ease-in-out forwards; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px; 
+    animation: fadeIn 1s ease forwards; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:  #2907e7/
+    animation: fadeIn 1s ease forwards; 
+}
+
+.artwork-title {
+    font-size:36px;
+    margin-bottom: 10px;
+    animation: slideFromTop 1s ease forwards; 
+}
+
+
+.artwork-details {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.image-container {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 350px; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.image-container:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artwork-description {
+    width: 80%;
+    margin: 20px auto;
+    color: #ccc;
+    text-align: center; 
+    animation: fadeIn 1s ease forwards; 
+}
+
+.artwork-description p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2907e7; 
+    width: 100%;
+    position: relative;
+    margin-top: 20px; 
+}
+
+a {
+    color: white;
+}
+
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.marquee-container {
+overflow: hidden;
+white-space: nowrap;
+}
+
+.marquee-container h3 {
+animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
+}
+
+@font-face {
+font-family: 'SmoothPet';
+src: url(fonts/transfonter.org-20240408-205401/SmoothPet.woff) format('woff');
+
+}
+
+h3 {
+font-family: 'SmoothPet'
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 480px) {
+   
+}
